@@ -59,14 +59,6 @@
   cursor: pointer;
 }
 
-// .slider-btn:hover {
-//   color: #222;
-// }
-
-// .slider-btn:focus {
-//   outline: none;
-// }
-
 //* ****************************************************** */
 .reviews-img {
   display: block;
@@ -76,12 +68,13 @@
 }
 .reviews-blok {
   padding: 47px 53px 39px 53px;
-  margin-bottom: 15px;
+  margin-bottom: 42px;
   position: relative;
   background: url('.././images/quotes.png') 43px 32px no-repeat, linear-gradient(#fafafa, #fafafa);
 }
 .reviews-text {
   padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 35px;
   padding-right: 25px;
   font-style: normal;
@@ -94,20 +87,17 @@
   color: #000000;
 }
 
-.reviews-blok::before {
+.reviews-man::before {
   position: absolute;
-  top: 34px;
-  left: 77px;
-  content: '';
-  display: block;
-  background-image: url('.././images/quotes.png');
-  width: 54px;
-  height: 40px;
-  z-index: -1;
+  left: 50%;
+  top: -100%;
+  transform: translateX(-50%);
+  content: '\2022\202F\202F\202F\2022\202F\202F\202F\2022';
+  color: #d31342;
 }
 
 .reviews-man {
-  margin-bottom: 47px;
+  position: relative;
 
   font-weight: 500;
   font-size: 20px;
@@ -117,22 +107,22 @@
 
   color: #000000;
 }
-.reviews-dots {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.reviews-dot {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #d31342;
-  align-items: center;
-}
+// .reviews-dots {
+//   text-align: center;
+//   margin-bottom: 15px;
+// }
+// .reviews-dot {
+//   display: inline-block;
+//   width: 4px;
+//   height: 4px;
+//   border-radius: 50%;
+//   background-color: #d31342;
+//   align-items: center;
+// }
 
-.reviews-card .reviews-dot + .reviews-dot {
-  margin-left: 10px;
-}
-.reviews-dot-left {
-  margin-left: auto;
-}
+// .reviews-card .reviews-dot + .reviews-dot {
+//   margin-left: 10px;
+// }
+// .reviews-dot-left {
+//   margin-left: auto;
+// }
