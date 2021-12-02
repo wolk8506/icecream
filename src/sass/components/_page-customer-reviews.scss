@@ -1,0 +1,138 @@
+.section-slider {
+  padding-bottom: 132px;
+}
+
+.container-slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 926px;
+  height: 395px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.scrol-slider {
+  display: flex;
+  position: absolute;
+  bottom: 2px;
+  right: 50%;
+  transform: translateX(50%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+}
+.scrol-slider > button {
+  margin-left: auto;
+
+  fill: #d9d9d9;
+}
+.scrol-slider > button.is-activ {
+  fill: #d31342;
+}
+.scrol-slider > button + button {
+  margin-left: 18px;
+}
+
+.main-slide {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-btn {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+// .slider-btn:hover {
+//   color: #222;
+// }
+
+// .slider-btn:focus {
+//   outline: none;
+// }
+
+//* ****************************************************** */
+.reviews-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+.reviews-blok {
+  padding: 47px 53px 39px 53px;
+  margin-bottom: 15px;
+  position: relative;
+  background: url('.././images/quotes.png') 43px 32px no-repeat, linear-gradient(#fafafa, #fafafa);
+}
+.reviews-text {
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 25px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+
+  letter-spacing: 0.04em;
+  background: repeating-linear-gradient(transparent, transparent 30px, #e1e1e1 30px, #e1e1e1 31px);
+  color: #000000;
+}
+
+.reviews-blok::before {
+  position: absolute;
+  top: 34px;
+  left: 77px;
+  content: '';
+  display: block;
+  background-image: url('.././images/quotes.png');
+  width: 54px;
+  height: 40px;
+  z-index: -1;
+}
+
+.reviews-man {
+  margin-bottom: 47px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+
+  text-align: center;
+
+  color: #000000;
+}
+.reviews-dots {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.reviews-dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #d31342;
+  align-items: center;
+}
+
+.reviews-card .reviews-dot + .reviews-dot {
+  margin-left: 10px;
+}
+.reviews-dot-left {
+  margin-left: auto;
+}
