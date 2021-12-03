@@ -4,7 +4,14 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
 //**********************
+
 @import './utils/variables';
 @import './components/page-general';
 @import './components/products';
+
+@import './components/page-customer-reviews';
+
+@import './footer';
+
