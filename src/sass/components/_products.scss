@@ -99,9 +99,10 @@
 }
 .products-cards {
   margin-left: -30px;
-  margin-top: -30px;
+
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-top: -30px;
   }
 }
 .products-card {
