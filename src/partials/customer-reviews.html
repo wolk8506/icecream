@@ -1,10 +1,20 @@
-<section class="section section-slider">
+<section class="section-slider">
   <h2 class="visually-hidden">Customer Reviews</h2>
-
   <div class="slider-blok container-slider">
-    <div class="main-slide">
-      <div class="slide-01 reviews-card">
-        <img class="reviews-img" src="./images/man-1.jpg" alt="Emily" width="85" height="85" />
+    <div class="main-slide items">
+      <div class="slide-01 reviews-card item">
+        <picture>
+          <source
+            srcset="./images/man-1@1x.webp 1x, ./images/man-1@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 320px)" />
+          <source
+            srcset="./images/man-1@1x.jpg 1x, ./images/man-1@2x.jpg 2x"
+            media="(min-width: 320px)" />
+
+          <img class="reviews-img" src="./images/man-1@1x.jpg" alt="Emily" width="85" height="85"
+        /></picture>
+
         <div class="reviews-blok">
           <p class="reviews-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
@@ -14,8 +24,19 @@
 
         <h3 class="reviews-man">Emily, Los Angeles</h3>
       </div>
-      <div class="slide-02 reviews-card">
-        <img class="reviews-img" src="./images/man-2.jpg" alt="Emily" width="85" height="85" />
+      <div class="slide-02 reviews-card item">
+        <picture>
+          <source
+            srcset="./images/man-2@1x.webp 1x, ./images/man-2@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 320px)" />
+          <source
+            srcset="./images/man-2@1x.jpg 1x, ./images/man-2@2x.jpg 2x"
+            media="(min-width: 320px)" />
+
+          <img class="reviews-img" src="./images/man-2@1x.jpg" alt="Emily" width="85" height="85"
+        /></picture>
+
         <div class="reviews-blok">
           <p class="reviews-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
@@ -25,8 +46,18 @@
 
         <h3 class="reviews-man">Emily, Los Angeles</h3>
       </div>
-      <div class="slide-03 reviews-card">
-        <img class="reviews-img" src="./images/man-3.jpg" alt="Emily" width="85" height="85" />
+      <div class="slide-03 reviews-card item">
+        <picture>
+          <source
+            srcset="./images/man-3@1x.webp 1x, ./images/man-3@2x.webp 2x"
+            type="image/webp"
+            media="(min-width: 320px)" />
+          <source
+            srcset="./images/man-3@1x.jpg 1x, ./images/man-3@2x.jpg 2x"
+            media="(min-width: 320px)" />
+
+          <img class="reviews-img" src="./images/man-3@1x.jpg" alt="Emily" width="85" height="85"
+        /></picture>
         <div class="reviews-blok">
           <p class="reviews-text">
             Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
@@ -40,17 +71,17 @@
     <div class="scrol-slider">
       <button class="is-activ slider-btn" id="sl1">
         <svg class="contacts-section-ico" width="12" height="12">
-          <use href="./images/icons.svg#home"></use>
+          <use href="./images/icons-6.svg#home"></use>
         </svg>
       </button>
       <button class="slider-btn" id="sl2">
         <svg class="contacts-section-ico" width="12" height="12">
-          <use href="./images/icons.svg#elipse"></use>
+          <use href="./images/icons-6.svg#elipse"></use>
         </svg>
       </button>
       <button class="slider-btn" id="sl3">
         <svg class="contacts-section-ico" width="12" height="12">
-          <use href="./images/icons.svg#elipse"></use>
+          <use href="./images/icons-6.svg#elipse"></use>
         </svg>
       </button>
     </div>
