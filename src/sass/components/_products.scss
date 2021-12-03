@@ -1,22 +1,26 @@
 .products-container {
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
   padding-top: 121px;
   padding-left: 15px;
   padding-bottom: 98px;
   padding-right: 15px;
-
-  @media screen and (min-width: 320px) {
-    width: 320px;
+  width: 100vw;
+  @media screen and (min-width: 480px) {
+    width: 480px;
   }
-
   @media screen and (min-width: 768px) {
     width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 122px;
     padding-bottom: 112px;
   }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: 1080px) {
+    width: 1080px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 127px;
     padding-bottom: 119px;
   }
@@ -36,7 +40,7 @@
     line-height: 1.15;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1080px) {
     font-size: 30px;
     line-height: 1.13;
     letter-spacing: 0.04em;
@@ -51,18 +55,18 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $color2;
-  margin-bottom: 31px;
+  margin-bottom: 144px;
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
     line-height: 1.14;
-    margin-bottom: 39px;
+    margin-bottom: 150px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1080px) {
     font-size: 58px;
     line-height: 1.13;
-    margin-bottom: 49px;
+    margin-bottom: 259px;
   }
 }
 
@@ -74,7 +78,6 @@
   padding-left: 40px;
   padding-bottom: 41px;
   padding-right: 40px;
-  background-color: $background1;
   border-radius: 24px;
 
   @media screen and (min-width: 768px) {
@@ -83,7 +86,7 @@
     padding-bottom: 40px;
     padding-right: 10px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1080px) {
     padding-top: 163px;
     padding-left: 60px;
     padding-bottom: 50px;
@@ -91,29 +94,88 @@
   }
 }
 
+.products-wrap.pink {
+  background-color: $background1;
+  position: relative;
+}
+.products-wrap.pink::before {
+  content: url(../images/mobil/icecream-m.png);
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: -140px;
+
+  @media screen and (min-width: 768px) {
+    content: url(../images/tablet/icecream-t.png);
+    margin-left: -110px;
+    top: -100px;
+  }
+
+  @media screen and (min-width: 1080px) {
+    content: url(../images/desktop/icecream-d.png);
+    margin-left: -175px;
+    top: -180px;
+  }
+}
 .products-wrap.beige {
   background-color: $background5;
+  position: relative;
 }
+.products-wrap.beige::before {
+  content: url(../images/mobil/icecofee-m.png);
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: -140px;
+
+  @media screen and (min-width: 768px) {
+    content: url(../images/tablet/icecofee-t.png);
+    margin-left: -110px;
+    top: -100px;
+  }
+  @media screen and (min-width: 1080px) {
+    content: url(../images/desktop/icecoffee-d.png);
+    margin-left: -175px;
+    top: -180px;
+  }
+}
+
 .products-wrap.green {
   background-color: $background6;
+  position: relative;
+}
+.products-wrap.green::before {
+  content: url(../images/mobil/milkshake-m.png);
+  position: absolute;
+  left: 50%;
+  margin-left: -125px;
+  top: -140px;
+  @media screen and (min-width: 768px) {
+    content: url(../images/tablet/milkshake-t.png);
+    margin-left: -110px;
+    top: -100px;
+  }
+  @media screen and (min-width: 1080px) {
+    content: url(../images/desktop/milkshake-d.png);
+    margin-left: -175px;
+    top: -180px;
+  }
 }
 .products-cards {
   margin-left: -30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-top: -30px;
   }
 }
 .products-card {
   margin-left: 30px;
-  margin-top: 30px;
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
   }
 }
 .products-card:not(:last-child) {
-  margin-bottom: 17px;
+  margin-bottom: 150px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -127,6 +189,7 @@
   text-transform: uppercase;
   color: $color1;
   margin-bottom: 30px;
+  position: relative;
   @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
@@ -134,7 +197,6 @@
     margin-bottom: 32px;
   }
 }
-
 .products-caption-decoration {
   display: block;
   width: 6px;
@@ -199,4 +261,5 @@
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
+  fill: $color2;
 }
