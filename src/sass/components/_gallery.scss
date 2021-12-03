@@ -3,10 +3,39 @@
     font-size: 80px;
 }
 
+.box > picture > img {
+    display: block;
+	max-width:100%;
+    height: auto; 
+}
+
 .gallery-container{
     background: linear-gradient(to top, $background9 60% , $background7 40%);
     padding-bottom: 123px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
 }
+    
+    @media screen and (min-width: 480px) {
+        .gallery-container{
+        width: 480px;
+        }
+    }
+    
+    @media screen and (min-width: 768px) {
+        .gallery-container{
+            width: 768px;
+            }
+    }
+    
+    @media screen and (min-width: 1080px) {
+        .gallery-container{
+            width: 1080px;
+            }
+    }
 
 .heading{
     text-align: center;
@@ -28,13 +57,13 @@
 }
 @media screen and (max-width: 767px) {
     .masonry-list{
-    max-width: 619px;
+    max-width: 100%;
     height: 100%;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .masonry-list {
-    width: auto;
+    width: 100%;
     height: 100%;
     }
 }
@@ -67,6 +96,7 @@
 
 .box:hover,
 .box:focus{
+    cursor: pointer;
     transform: scale(1.1);
     z-index: 2;
 }
