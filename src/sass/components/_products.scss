@@ -73,7 +73,7 @@
 .list {
   list-style: none;
 }
-.products-wrap {
+.products-color {
   padding-top: 121px;
   padding-left: 40px;
   padding-bottom: 41px;
@@ -94,11 +94,11 @@
   }
 }
 
-.products-wrap.pink {
+.products-color.pink {
   background-color: $background1;
   position: relative;
 }
-.products-wrap.pink::before {
+.products-color.pink::before {
   content: url(../images/mobil/icecream-m.png);
   position: absolute;
   left: 50%;
@@ -117,11 +117,11 @@
     top: -180px;
   }
 }
-.products-wrap.beige {
+.products-color.beige {
   background-color: $background5;
   position: relative;
 }
-.products-wrap.beige::before {
+.products-color.beige::before {
   content: url(../images/mobil/icecofee-m.png);
   position: absolute;
   left: 50%;
@@ -140,11 +140,11 @@
   }
 }
 
-.products-wrap.green {
+.products-color.green {
   background-color: $background6;
   position: relative;
 }
-.products-wrap.green::before {
+.products-color.green::before {
   content: url(../images/mobil/milkshake-m.png);
   position: absolute;
   left: 50%;
