@@ -3,7 +3,8 @@
 }
 
 .hero-bg {
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: visible;
   position: relative;
   display: flex;
   background-image: url(../images/hero/ellipse-nodesktop@1x.png);
@@ -21,7 +22,7 @@
     background-image: url(../images/hero/sotasty-tablet@1x.png),
       url(../images/hero/milk-tablet@1x.png), url(../images/hero/ellipse-nodesktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 566px, bottom 28px left 34px, bottom 46px left 284px;
+    background-position: bottom right 34px, bottom 28px left 34px, bottom 47px left 310px;
     background-size: 168px auto, 124px auto, 324px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -36,7 +37,7 @@
     background-image: url(../images/hero/sotasty-desktop@1x.png),
       url(../images/hero/milk-desktop@1x.png), url(../images/hero/ellipse-desktop@1x.png);
     background-repeat: no-repeat;
-    background-position: bottom left 878px, bottom 45px left 77px, bottom 75px left 444px;
+    background-position: bottom right 35px, bottom 45px left 20px, bottom 90px left 404px;
     background-size: 293px auto, 188px auto, 538px auto;
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -115,7 +116,7 @@
 .hero-middle {
   position: absolute;
   bottom: 0;
-  left: 174px;
+  left: 145px;
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -125,7 +126,7 @@
   @media screen and (min-width: 1280px) {
     position: absolute;
     bottom: 0;
-    left: 594px;
+    left: 540px;
   }
 }
 
@@ -159,11 +160,11 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: inline-block;
-    padding-left: 120px;
+    padding-left: 130px;
     padding-bottom: 34px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 180px;
+    padding-left: 190px;
     padding-bottom: 56px;
   }
 }

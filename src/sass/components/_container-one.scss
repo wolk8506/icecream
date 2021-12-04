@@ -11,12 +11,13 @@
   }
   @media screen and (min-width: 768px) {
     width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 34px;
+    padding-right: 34px;
   }
   @media screen and (min-width: 1280px) {
-    width: 1080px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 1125px;
+    padding-left: 52px;
+    padding-right: 52px;
+    overflow-x: visible;
   }
 }
