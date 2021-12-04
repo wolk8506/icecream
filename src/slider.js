@@ -1,11 +1,11 @@
 const mainSlide = document.querySelector('.main-slide');
 const slidesCount = mainSlide.querySelectorAll('.reviews-card').length;
 const container = document.querySelector('.container-slider');
+const delay = 5000;
 let sl1 = document.getElementById('sl1');
 let sl2 = document.getElementById('sl2');
 let sl3 = document.getElementById('sl3');
 let activeSlideIndex = 0;
-const delay = 3000;
 
 sl1.addEventListener('click', () => {
   activeSlideIndex = 0;
@@ -59,7 +59,7 @@ function sliderActive() {
   }
 }
 
-var timer = setInterval(timerClick, delay);
+let timer = setInterval(timerClick, delay);
 
 function timerReset() {
   clearInterval(timer);
