@@ -8,8 +8,19 @@
 //**********************
 
 @import './utils/variables';
+@import './utils/variables-one';
+@import './utils/reset';
+@import './components/link-button';
+@import './components/main-button';
 @import './components/page-general';
+@import './components/container-one';
 @import './components/container';
+
+@import './layouts/header';
+@import './layouts/header_modal-window';
+@import './layouts/hero';
+@import './layouts/mobile-menu';
+
 
 @import './components/products';
 @import'./components/about';
