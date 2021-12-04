@@ -8,11 +8,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
   min-width: 320px;
+
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
   width: 100vw;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -23,27 +24,6 @@ ul {
     width: 1080px;
   }
 }
-
-// .container {
-//   padding: 0 20px;
-
-//   @media screen and (max-width: 767px) {
-//     width: 320px;
-//     position: relative;
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//     display: flex;
-//     position: relative;
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//     display: flex;
-//     position: relative;
-//   }
-// }
 
 .footer {
   background-color: $background7;
