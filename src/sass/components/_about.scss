@@ -1,41 +1,78 @@
-// .about-section {
-//     padding-left: 20px;
-//     padding-right: 20px;
-//     margin-left: auto;
-//   margin-right: auto;
-//   font-size: calc(.8rem + 2vmax);
+.about-section {
+  max-width: 1298px;
+  background-color: $background7;
+}
 
-//   background-color: $background7;
+.about-container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 125px;
+  margin-left: auto;
+  margin-right: auto;
 
-//   @media screen and (min-width: 480px) {
-//     width: 480px;
-//     padding-top: 125px;
-//   }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-//   @media screen and (min-width: 768px) {
-//     width: 768px;
-//   }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 
-//   @media screen and (min-width: 1280px) {
-//     width: 1280px;
-//   }
-// }
+  @media screen and (min-width: 1080px) {
+    width: 1080px;
+  }
+}
 
-// .about-label {
-// //   font-family: Titan One;
-// // font-style: normal;
-// // font-weight: 400;
-// // font-size: 18px;
-// // line-height: 1.17;
-// // text-align: center;
-// // text-transform: uppercase;
+.about-label {
+  display: block;
+  margin-bottom: 15px;
+  font-family: $font-acent;
+  font-weight: 400;
 
-// // color: #FFA5BA;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
 
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+    line-height: 1.16;
+  }
 
-// }
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
 
-// about-title
+  @media screen and (min-width: 1080px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.about-title {
+  margin-bottom: 25px;
+  font-family: $font-acent;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color2;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 48px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1080px) {
+    margin-bottom: 55px;
+    font-size: 58px; 
+    line-height: 1.14;
+  }
+}
 
 // about-image
 
