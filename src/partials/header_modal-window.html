@@ -1,0 +1,67 @@
+<div class="header-backdrop is-hidden" data-header-modal>
+    <div class="header-modal">
+        <button class="header-modal__close-button" type="button"  data-header-modal-close>
+            <svg class="header-modal__icon-close">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+
+        <div class="header-modal__container">
+
+            <h2 class="header-modal__title">Please, fill the form to make an order</h2>
+            
+            <form class="header-modal__form">
+
+                <div class="form-field">
+                    <label for="name" class="form-field__label">Full name
+                        <span class="form-field__span">
+                            <input class="form-field__input" type="text" name="name" id="name" required autofocus />
+                            <span class="form-field__input-icon">
+                                <svg class="form-field__icon" width="12" height="12">  
+                                    <use href="./images/sprite.svg#icon-name"></use>
+                                </svg>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+                
+                <div class="form-field">
+                    <label for="tel" class="form-field__label">Telephone
+                        <span class="form-field__span">
+                            <input class="form-field__input" type="tel" name="tel" id="tel" required autofocus />
+                            <span class="form-field__input-icon">
+                                <svg class="form-field__icon" width="13" height="13">
+                                    <use href="./images/sprite.svg#icon-tel"></use>
+                                </svg>
+                            </span>
+                        </span>    
+                    </label>
+                    
+                </div>
+                
+                <div class="form-field">
+                    <label for="email" class="form-field__label">E-mail
+                        <span class="form-field__span">
+                            <input class="form-field__input" type="email" name="email" id="email" autofocus />
+                            <span class="form-field__input-icon">
+                                <svg class="form-field__icon" width="15" height="12">
+                                    <use href="./images/sprite.svg#icon-mail"></use>
+                                </svg>
+                            </span> 
+                        </span> 
+                    </label>
+                </div>
+                
+                <div class="form-field">
+                    <label for="comment" class="form-field__label">Your order</label>
+                        <textarea id="comment" name="comment" rows="8" placeholder="I want..."
+                            class="form-field__textarea-comment"></textarea>     
+                </div>
+            
+                <button type="submit" class="header-modal__submit-button main-button">Submit!</button>
+            
+            </form>
+        </div>
+        
+    </div>
+</div>
