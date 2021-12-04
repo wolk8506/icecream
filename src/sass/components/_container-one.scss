@@ -1,0 +1,23 @@
+.container-one {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  // outline: 1px solid red;
+  width: 100vw;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1125px;
+    padding-left: 52px;
+    padding-right: 52px;
+    overflow-x: visible;
+  }
+}
