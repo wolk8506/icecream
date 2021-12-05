@@ -1,5 +1,4 @@
-.backdrop-product,
-.backdrop-product-beige {
+.backdrop-product {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -7,18 +6,16 @@
   top: 0;
 }
 
-.backdrop-product.is-hidden,
-.backdrop-product-beige.is-hidden {
+.backdrop-product.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
 
-.product-modal,
-.product-beige-modal {
+.product-modal {
   position: absolute;
   width: 320px;
-  min-height: 600px;
+  min-height: 450px;
   background-color: $background1;
   border-radius: 10px;
   top: 50%;
@@ -27,8 +24,7 @@
   padding: 10px;
 }
 
-.product-close-button,
-.product-beige-close-button {
+.product-close-button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-bg-color);
   width: 30px;
@@ -54,4 +50,16 @@
   width: 18px;
   height: 18px;
   fill: currentColor;
+}
+
+.text-modal-product {
+  text-align: center;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $color1;
+  margin-top: 25px;
 }
