@@ -1,4 +1,5 @@
-.backdrop-product {
+.backdrop-product,
+.backdrop-beige-product {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -12,7 +13,14 @@
   pointer-events: none;
 }
 
-.product-modal {
+.backdrop-beige-product.is-hidden-beige {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-modal,
+.product-beige-modal {
   position: absolute;
   width: 320px;
   min-height: 450px;
@@ -24,7 +32,12 @@
   padding: 10px;
 }
 
-.product-close-button {
+.product-beige-modal {
+  background-color: $background5;
+}
+
+.product-close-button,
+.product-beige-close-button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-bg-color);
   width: 30px;
@@ -46,7 +59,8 @@
   }
 }
 
-.product-modal-icon-close {
+.product-modal-icon-close,
+.product-beige-modal-icon-close {
   width: 18px;
   height: 18px;
   fill: currentColor;
