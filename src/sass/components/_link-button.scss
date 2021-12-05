@@ -11,7 +11,7 @@
   &:focus {
     background-color: var(--secondary-bg-color);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 40px;
   }
 }
@@ -33,7 +33,7 @@
 .link-button--hero {
   width: 18px;
   height: 18px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 26px;
     height: 26px;
   }
@@ -46,7 +46,7 @@
   font-size: 8px;
   line-height: 1.28;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 138px;
     font-size: 14px;
   }
@@ -61,7 +61,7 @@
   width: 10px;
   height: 7px;
   fill: currentColor;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     height: 10px;
   }
 }
