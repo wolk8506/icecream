@@ -5,7 +5,7 @@
   position: relative;
   overflow: hidden;
   min-width: 280px;
-  height: 545px;
+  height: 557px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
   width: 300%;
-  @include animation(transform);
+  @include animation-slider(transform);
 }
 .main-slide > div {
   background-repeat: no-repeat;
@@ -52,6 +52,9 @@
 
   cursor: pointer;
 }
+.scrol-slider-ico {
+  display: block;
+}
 
 /* ****************************************************** */
 .reviews-img {
@@ -64,7 +67,7 @@
   padding: 42px 40px 27px 60px;
   margin-bottom: 51px;
   position: relative;
-  background: url('../images/quotes.png') 68px 31px no-repeat,
+  background: url('../images/quotes.svg') 68px 31px no-repeat,
     linear-gradient($color8-gradient, $color8-gradient);
 }
 .reviews-text {
@@ -100,43 +103,32 @@
   }
 }
 
-@media screen and (min-width: 333px) {
+@media screen and (min-width: 323px) {
   .container-slider {
-    height: 512px;
+    height: 527px;
   }
 }
-@media screen and (min-width: 344px) {
+@media screen and (min-width: 334px) {
   .container-slider {
-    height: 484px;
+    height: 498px;
   }
 }
-@media screen and (min-width: 386px) {
+@media screen and (min-width: 376px) {
   .container-slider {
-    height: 452px;
+    height: 466px;
   }
 }
-@media screen and (min-width: 438px) {
+@media screen and (min-width: 428px) {
   .container-slider {
-    height: 421px;
+    height: 435px;
   }
 }
-@media screen and (min-width: 514px) {
-  .container-slider {
-    height: 390px;
-  }
-}
-@media screen and (min-width: 671px) {
-  .container-slider {
-    height: 360px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .section-slider {
     padding-bottom: 119px;
   }
   .container-slider {
-    height: 385px;
+    height: 381px;
     width: 620px;
   }
   .reviews-img {
@@ -145,7 +137,7 @@
   .reviews-blok {
     padding: 30px 56px 28px 40px;
     margin-bottom: 42px;
-    background: url('../images/quotes.png') 21px 17px no-repeat,
+    background: url('../images/quotes.svg') 21px 17px no-repeat,
       linear-gradient($color8-gradient, $color8-gradient);
   }
   .reviews-text {
@@ -159,7 +151,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .section-slider {
     padding-bottom: 132px;
   }
@@ -173,7 +165,7 @@
   .reviews-blok {
     padding: 37px 53px 27px 53px;
     margin-bottom: 32px;
-    background: url('../images/quotes.png') 57px 26px no-repeat,
+    background: url('../images/quotes.svg') 57px 26px no-repeat,
       linear-gradient($color8-gradient, $color8-gradient);
   }
   .reviews-text {
