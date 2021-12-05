@@ -9,15 +9,13 @@
     height: auto; 
 }
 
-.gallery-container{
+.gallery-background{
     background: linear-gradient(to top, $background9 60% , $background7 40%);
-    padding-bottom: 123px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    width:100%;
 }
+
+.container.gallery-container{   
+    padding-bottom: 123px;
+    }
     
     @media screen and (min-width: 480px) {
         .gallery-container{
