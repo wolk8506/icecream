@@ -46,6 +46,7 @@
 .button-menu {
   background-color: transparent;
   cursor: pointer;
+  line-height: 0;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-right: 30px;
