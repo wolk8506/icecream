@@ -255,4 +255,9 @@
   margin-left: auto;
   margin-right: auto;
   fill: $color2;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: #fff5f6;
+  }
 }
