@@ -1,28 +1,45 @@
 .about-section {
-  max-width: 1298px;
   background-color: $background7;
+  @media screen and (max-width: 767px) {
+  background-image: url(../images/about/milk-mobile.png);
+  background-repeat: no-repeat;
+  background-position: 0 766px;
+  background-size: 320px;
+
+   @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+    background-image: url(../images/hero/ellipse-nodesktop@2x.png);
+  }
+  
+}
+
+@media screen and (min-width: 1080px) {
+  background-image: url(../images/about/milk-desktop.png);
+  background-repeat: no-repeat;
+  background-position: 0 342px;
+  background-size: 1280px ;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+   @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+    background-image: url(../images/hero/milk-desktop@2x.png);
+  }
+}
 }
 
 .about-container {
-  width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 125px;
   padding-bottom: 40px;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
     padding-bottom: 60px;
   }
 
   @media screen and (min-width: 1080px) {
-    width: 1080px;
     padding-bottom: 40px;
   }
 }
@@ -90,9 +107,14 @@
   }
 }
 
+.img-cow {
+  max-width: 516px;
+}
+
 .about-wrapper {
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -100,16 +122,15 @@
   padding-left: 35px;
   padding-right: 35px;
 
-   @media screen and (min-width: 768px) {
-  padding-top: 50px;
-  padding-left: 17px;
-  padding-right: 0;
-}
+  @media screen and (min-width: 768px) {
+    padding-top: 50px;
+    padding-left: 17px;
+    padding-right: 0;
+  }
 
-@media screen and (min-width: 1080px) {
-  padding-left: 74px;
-}
-
+  @media screen and (min-width: 1080px) {
+    padding-left: 74px;
+  }
 }
 
 .about-text-dark {
@@ -159,18 +180,31 @@
   display: flex;
   align-items: center;
   padding: 12px 37px;
-  background: $color1;
-border-radius: 22px;
-border: 0;
-font-family: $font-main;
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.28;
-text-align: center;
-color: $color2;
+  background-color: $color1;
+  border-radius: 22px;
+  border: 0;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: $color2;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (min-width: 768px) {
-  font-size: 16px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $background4;
+  }
 }
+
+.about-btn-bracket {
+  margin-left: 13px;
+  width: 8px;
+  height: 10px;
+  fill: $color2;
 }
