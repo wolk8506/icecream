@@ -1,12 +1,6 @@
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  min-width: 320px;
+.products-container {
   padding-top: 121px;
   padding-bottom: 98px;
-  width: 100vw;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     padding-top: 122px;
     padding-bottom: 112px;
