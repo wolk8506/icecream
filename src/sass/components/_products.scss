@@ -1,4 +1,4 @@
-.products-container {
+.container-products {
   padding-bottom: 98px;
   padding-top: 121px;
   @media screen and (min-width: 768px) {
@@ -10,7 +10,6 @@
     padding-bottom: 119px;
   }
 }
-
 .products-label {
   font-family: $font-acent;
   font-size: 18px;
