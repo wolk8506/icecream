@@ -1,0 +1,268 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100vw;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 1080px;
+  }
+}
+
+.footer {
+  background-color: $background7;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer-style {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-text {
+  width: 234px;
+  margin-bottom: 43px;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    margin-bottom: 106px;
+  }
+}
+
+.footer-text-made {
+  font-family: $font-acent;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $color3;
+  margin-bottom: 17px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    letter-spacing: 0.04em;
+    width: 340px;
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    width: 472px;
+  }
+}
+
+.footer-text-passion {
+  font-family: $font-acent;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $color2;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+    display: flex;
+  }
+}
+
+.footer-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 50px;
+  }
+}
+
+.footer-icon {
+  fill: $background8;
+
+  width: 32px;
+  height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $color2;
+  }
+}
+
+.footer-item {
+  @media screen and (max-width: 767px) {
+    &:not(:first-child) {
+      margin-left: 28px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  @media screen and (min-widt: 1280px) {
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+  }
+}
+
+.footer-contact {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.8;
+
+  color: $color4;
+
+  display: flex;
+  justify-content: right;
+  margin-bottom: 65px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: inline-block;
+    width: 319px;
+    text-align: right;
+  }
+}
+
+.footer-tel {
+  text-decoration: none;
+  font-family: $font-main;
+  font-weight: bold;
+  line-height: 1.8;
+
+  color: $color2;
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.footer-sign {
+  @media screen and (max-width: 767px) {
+    &::before {
+      content: '';
+      border: 1px solid $color6;
+      width: 100%;
+
+      position: absolute;
+      right: 0;
+      bottom: 89px;
+    }
+    display: block;
+    width: 145px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &::before {
+      content: '';
+      width: 100%;
+      bottom: 73px;
+      border: 1px solid $color6;
+
+      padding: 0;
+      position: absolute;
+    }
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 10px;
+
+    &::before {
+      content: '';
+      width: 100%;
+      bottom: 40px;
+      border: 1px solid $color6;
+
+      padding: 0;
+      position: absolute;
+    }
+  }
+}
+
+.footer-copy {
+  font-family: $font-main;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: $color5;
+}
