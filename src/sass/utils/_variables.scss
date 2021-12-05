@@ -12,14 +12,14 @@ $color3: #ffa5ba;
 $color4: #000000;
 // footer, contacts, about
 $color5: #907e82;
-$color6: #E1E1E1;
+$color6: #e1e1e1;
 $color6-btn: #d9d9d9;
 $color7-btn-activ: #d31342;
 $color8-gradient: #fafafa;
 $color9-gradient: #e1e1e1;
 
 $color-ice1: #f63a99;
-$color-ice2:#30dcf6;
+$color-ice2: #30dcf6;
 $color-ice3: #f2d200;
 $color-ice4: #0cff7f;
 $color-ice5: #e09c5f;
@@ -45,8 +45,14 @@ $background10: rgba(255, 255, 255, 0.5);
 
 // ANIMATION
 
-@mixin animation($property) {
+@mixin animation-slider($property) {
   transition-property: $property;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
+}
+
+@mixin animation($property) {
+  transition-property: $property;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

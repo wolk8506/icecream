@@ -2,9 +2,9 @@ const mainSlide = document.querySelector('.main-slide');
 const slidesCount = mainSlide.querySelectorAll('.reviews-card').length;
 const container = document.querySelector('.container-slider');
 const delay = 5000;
-let sl1 = document.getElementById('sl1');
-let sl2 = document.getElementById('sl2');
-let sl3 = document.getElementById('sl3');
+const sl1 = document.getElementById('sl1');
+const sl2 = document.getElementById('sl2');
+const sl3 = document.getElementById('sl3');
 let activeSlideIndex = 0;
 
 sl1.addEventListener('click', () => {
