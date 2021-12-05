@@ -1,0 +1,57 @@
+.backdrop-product,
+.backdrop-product-beige {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+}
+
+.backdrop-product.is-hidden,
+.backdrop-product-beige.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-modal,
+.product-beige-modal {
+  position: absolute;
+  width: 320px;
+  min-height: 600px;
+  background-color: $background1;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.product-close-button,
+.product-beige-close-button {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--secondary-bg-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--grey-text-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.product-modal-icon-close {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
