@@ -1,5 +1,6 @@
 .backdrop-product,
-.backdrop-beige-product {
+.backdrop-beige-product,
+.backdrop-green-product {
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -19,25 +20,45 @@
   pointer-events: none;
 }
 
+.backdrop-green-product.is-hidden-green {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .product-modal,
-.product-beige-modal {
+.product-beige-modal,
+.product-green-modal {
   position: absolute;
   width: 320px;
   min-height: 450px;
-  background-color: $background1;
   border-radius: 10px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   padding: 10px;
 }
 
+.product-modal {
+  background-color: $background1;
+  top: 15%;
+  left: 8%;
+  transform: translate(-15%, -8%);
+}
 .product-beige-modal {
   background-color: $background5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-green-modal {
+  background-color: $background6;
+  top: 85%;
+  left: 91%;
+  transform: translate(-85%, -91%);
 }
 
 .product-close-button,
-.product-beige-close-button {
+.product-beige-close-button,
+.product-green-close-button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--secondary-bg-color);
   width: 30px;
@@ -61,7 +82,8 @@
 }
 
 .product-modal-icon-close,
-.product-beige-modal-icon-close {
+.product-beige-modal-icon-close,
+.product-green-modal-icon-close {
   width: 15px;
   height: 15px;
   fill: currentColor;
