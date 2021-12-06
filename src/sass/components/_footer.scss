@@ -37,10 +37,47 @@ ul {
 }
 
 .footer-style {
+  @media screen and (max-width: 767px) {
+    &::after {
+      content: '';
+      width: 100%;
+      bottom: 89px;
+      border: 1px solid $color6;
+
+      position: absolute;
+      right: 0;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: flex-start;
     justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 120px;
+
+    &::after {
+      content: '';
+      width: 100%;
+      bottom: 73px;
+      border: 1px solid $color6;
+
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 106px;
+
+    &::after {
+      content: '';
+      width: 100%;
+      bottom: 45px;
+      border: 1px solid $color6;
+
+      position: absolute;
+      right: 0;
+    }
   }
 }
 
@@ -51,12 +88,11 @@ ul {
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 120px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1280px) {
     width: 100%;
-    margin-bottom: 106px;
   }
 }
 
@@ -161,22 +197,28 @@ ul {
     position: absolute;
 
     @media screen and (max-width: 767px) {
+      width: 17px;
+      height: 60px;
+
       left: 10px;
       bottom: 40px;
     }
 
     @media screen and (min-width: 768px) {
+      width: 17px;
+      height: 60px;
+
       left: 10px;
-      bottom: 50px;
+      bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
+      width: 20px;
+      height: 90px;
+
       left: 15px;
       bottom: 60px;
     }
-
-    width: 20px;
-    height: 100px;
 
     border-radius: 50px;
     background: $background10;
@@ -224,9 +266,6 @@ ul {
     width: 30px;
     height: 50px;
   }
-
-  width: 37px;
-  height: 56px;
 
   background: $color-ice5;
   border-radius: 0 0 25px 25px;
@@ -287,6 +326,7 @@ ul {
 
 .footer-icon {
   fill: $background8;
+  display: block;
 
   width: 32px;
   height: 32px;
@@ -365,15 +405,6 @@ ul {
 
 .footer-sign {
   @media screen and (max-width: 767px) {
-    &::before {
-      content: '';
-      border: 1px solid $color6;
-      width: 100%;
-
-      position: absolute;
-      right: 0;
-      bottom: 89px;
-    }
     display: block;
     width: 145px;
     margin-left: auto;
@@ -383,16 +414,6 @@ ul {
   }
 
   @media screen and (min-width: 768px) {
-    &::before {
-      content: '';
-      width: 100%;
-      bottom: 73px;
-      border: 1px solid $color6;
-
-      padding: 0;
-      position: absolute;
-    }
-
     display: flex;
     justify-content: center;
     padding-bottom: 18px;
@@ -400,16 +421,6 @@ ul {
 
   @media screen and (min-width: 1280px) {
     padding-bottom: 10px;
-
-    &::before {
-      content: '';
-      width: 100%;
-      bottom: 40px;
-      border: 1px solid $color6;
-
-      padding: 0;
-      position: absolute;
-    }
   }
 }
 
