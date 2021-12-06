@@ -1,11 +1,13 @@
 .container-products {
-  padding-bottom: 98px;
+  background-color: $background9;
   padding-top: 121px;
+  padding-bottom: 98px;
+
   @media screen and (min-width: 768px) {
     padding-top: 122px;
     padding-bottom: 112px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1080px) {
     padding-top: 127px;
     padding-bottom: 119px;
   }
@@ -85,19 +87,19 @@
 .products-color.pink::before {
   content: url(../images/mobil/icecream-m.png);
   position: absolute;
+  width: 90%;
   left: 50%;
-  margin-left: -125px;
+  transform: translate(-50%);
   top: -140px;
 
   @media screen and (min-width: 768px) {
     content: url(../images/tablet/icecream-t.png);
-    margin-left: -110px;
+    width: 100%;
     top: -100px;
   }
 
   @media screen and (min-width: 1280px) {
     content: url(../images/desktop/icecream-d.png);
-    margin-left: -161px;
     top: -180px;
   }
 }
@@ -108,18 +110,18 @@
 .products-color.beige::before {
   content: url(../images/mobil/icecofee-m.png);
   position: absolute;
+  width: 90%;
   left: 50%;
-  margin-left: -125px;
+  transform: translate(-50%);
   top: -140px;
 
   @media screen and (min-width: 768px) {
     content: url(../images/tablet/icecofee-t.png);
-    margin-left: -110px;
+    width: 100%;
     top: -100px;
   }
   @media screen and (min-width: 1280px) {
     content: url(../images/desktop/icecoffee-d.png);
-    margin-left: -175px;
     top: -180px;
   }
 }
@@ -131,45 +133,36 @@
 .products-color.green::before {
   content: url(../images/mobil/milkshake-m.png);
   position: absolute;
+  width: 90%;
   left: 50%;
-  margin-left: -125px;
+  transform: translate(-50%);
   top: -140px;
   @media screen and (min-width: 768px) {
     content: url(../images/tablet/milkshake-t.png);
-    margin-left: -110px;
+    width: 100%;
     top: -100px;
   }
   @media screen and (min-width: 1280px) {
     content: url(../images/desktop/milkshake-d.png);
-    margin-left: -175px;
     top: -180px;
   }
 }
 .products-cards {
-  margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
-    display: flex;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: -24px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
 .products-card {
-  margin-left: 24px;
   width: 280px;
-  @media screen and (min-width: 321px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 3 - 30px);
-    margin-left: 28px;
-    margin-right: 0;
-  }
-  @media screen and (min-width: 1280) {
-    margin-left: 30px;
   }
 }
 .products-card:not(:last-child) {
