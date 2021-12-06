@@ -34,26 +34,20 @@
   min-height: 450px;
   border-radius: 10px;
   padding: 10px;
-}
-
-.product-modal {
-  background-color: $background1;
-  top: 15%;
-  left: 8%;
-  transform: translate(-15%, -8%);
-}
-.product-beige-modal {
-  background-color: $background5;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
+.product-modal {
+  background-color: $background1;
+}
+.product-beige-modal {
+  background-color: $background5;
+}
+
 .product-green-modal {
   background-color: $background6;
-  top: 85%;
-  left: 91%;
-  transform: translate(-85%, -91%);
 }
 
 .product-close-button,
