@@ -7,6 +7,7 @@
   const closeMenuHowitsmade = document.querySelector('.js-close-howitsmade');
   const closeMenuProduvts = document.querySelector('.js-close-produvts');
   const closeMenuContact = document.querySelector('.js-close-contact');
+  const closeMenuBuynow = document.querySelector('.js-close-buynow');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -24,6 +25,7 @@
   closeMenuHowitsmade.addEventListener('click', toggleMenu);
   closeMenuProduvts.addEventListener('click', toggleMenu);
   closeMenuContact.addEventListener('click', toggleMenu);
+  closeMenuBuynow.addEventListener('click', toggleMenu);
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
