@@ -1,0 +1,17 @@
+.progress-line {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5px;
+  z-index: 1000;
+  background-color: $color1;
+}
+.progress-line__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: $color2;
+}
