@@ -12,7 +12,7 @@
     background: linear-gradient(180deg, #fff 12%, #fff5f6 0);
   }
 }
-.contacts-container {
+/* .contacts-container {
   margin: 0 auto;
   align-items: center;
   @media screen and (min-width: 320px) {
@@ -36,10 +36,12 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-}
+}*/
 
 .contacts-list {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: 767px) {
     margin-bottom: 54px;
   }
   @media screen and (min-width: 768px) {
@@ -47,7 +49,7 @@
     justify-content: space-between;
     margin-bottom: 81px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 86px;
   }
 }
@@ -58,7 +60,7 @@
   border: none;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-left: auto;
     margin-right: auto;
     width: 220px;
@@ -70,8 +72,13 @@
       margin-bottom: 20px;
     }
   }
+  @media screen and (max-width: 767px) {
+    max-width: 232px;
+  }
   @media screen and (min-width: 768px) {
-    // width: 220px;
+
+   // width: 232px;
+
     padding-top: 50px;
     padding-left: 31px;
     padding-right: 32px;
@@ -120,7 +127,7 @@
 
   color: #ffffff;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 25px;
   }
   @media screen and (min-width: 768px) {
@@ -147,7 +154,7 @@
 .place-info {
   display: block;
   border-bottom: 1px solid #e1e1e1;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 25px;
     padding-bottom: 25px;
   }
@@ -166,7 +173,7 @@
   display: block;
 
   border-bottom: 1px solid #e1e1e1;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 25px;
     padding-bottom: 10px;
   }
@@ -192,7 +199,7 @@
   letter-spacing: 0.04em;
 
   color: #000000;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
   }
   @media screen and (min-width: 768px) {
@@ -204,7 +211,7 @@
   }
 }
 .place-city {
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
   @media screen and (min-width: 768px) {
@@ -226,7 +233,7 @@
 
   color: #907e82;
 
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1.5;
   }
@@ -250,7 +257,7 @@
   line-height: 1.86;
   color: #ffa5ba;
   /* identical to box height, or 30px */
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
   }
   @media screen and (min-width: 768px) {
@@ -271,7 +278,7 @@
   /* or 29px */
 
   color: #907e82;
-  @media screen and (min-width: 320px) {
+  @media screen and (max-width: 767px) {
     font-size: 12px;
     line-height: 1.5;
   }
@@ -370,7 +377,7 @@
 
     box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
   }
-  @media screen and (min-width: 310px) {
+  @media screen and (max-width: 767px) {
     width: 161px;
   }
   @media screen and (min-width: 768px) {
