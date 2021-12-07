@@ -33,7 +33,7 @@
   width: 320px;
   min-height: 450px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -84,13 +84,10 @@
 }
 
 .text-modal-product {
-  text-align: center;
   font-family: $font-main;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  text-align: center;
   letter-spacing: 0.04em;
   color: $color1;
-  margin-top: 25px;
 }
