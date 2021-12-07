@@ -15,14 +15,14 @@
           incididunt ut labore et</p>
         <a class="link-button--hero link-button link" href="#gallery">
           <svg class="link-button__icon--hero" width="26" height="26">
-            <use href="./images/sprite.svg#icon-arrow_right"></use>
+            <use href="./images/icons.svg#icon-arrow_right"></use>
           </svg>
         </a>
       </div>
     </div>
     <div class="hero-middle rotation">
       <picture class="hero-middle__image">
-        <source srcset="
+        <source loading="lazy" srcset="
                     ./images/hero/icecream-desktop@1x.png 1x,
                     ./images/hero/icecream-desktop@2x.png 2x
                     " media="(min-width:1280px)" type="image/png" />
@@ -30,20 +30,20 @@
                     ./images/hero/icecream-tablet@1x.png 1x,
                     ./images/hero/icecream-tablet@2x.png 2x
                     " media="(min-width:768px)" type="image/png" />
-        <img srcset="
+        <source srcset="
                     ./images/hero/icecream-mobile@1x.png 1x,
-                    ./images/hero/icecream-mobile@2x.png 2x
-                    " src="./images/hero/icecream-mobile@1x.png" alt="nice icecream" />
+                    ./images/hero/icecream-mobile@2x.png 2x"/>
+                    <img  src="./images/hero/icecream-mobile@1x.png" alt="nice icecream" />
       </picture>
     </div>
     <div class="hero-right">
       <div class="hero-third">
         <ul class="hero-third__list list">
           <li class="hero-third__item">
-            <p class="hero-third__item--text"><span class="hero-third__item--number">16</span class="hero-third__item--title">cafes</p>
+            <p class="hero-third__item--text"><span class="hero-third__item--number">16</span>cafes</p>
           </li>
           <li class="hero-third__item">
-            <p class="hero-third__item--text"><span class="hero-third__item--number">23</span class="hero-third__item--title">food trucks</p>
+            <p class="hero-third__item--text"><span class="hero-third__item--number">23</span>food trucks</p>
           </li>
         </ul>
       </div>

@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
   width: 300%;
-  @include animation(transform);
+  @include animation-slider(transform);
 }
 .main-slide > div {
   background-repeat: no-repeat;
@@ -51,6 +51,9 @@
   border: none;
 
   cursor: pointer;
+}
+.scrol-slider-ico {
+  display: block;
 }
 
 /* ****************************************************** */
@@ -177,4 +180,3 @@
     top: -27px;
   }
 }
-

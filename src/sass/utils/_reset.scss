@@ -1,7 +1,12 @@
+// body {
+//   scroll-behavior: smooth;
+// }
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1,
