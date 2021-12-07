@@ -82,12 +82,16 @@ ul {
 }
 
 .footer-text {
-  width: 234px;
   margin-bottom: 43px;
   display: flex;
   flex-direction: column;
 
+  @media screen and (max-width: 767px) {
+    width: 234px;
+  }
+
   @media screen and (min-width: 768px) {
+    width: 340px;
     margin-bottom: 0;
   }
 
@@ -131,6 +135,11 @@ ul {
   text-transform: uppercase;
 
   color: $color2;
+
+  @media screen and (max-width: 767px) {
+    // display: flex;
+    // flex-direction: column;
+  }
 
   @media screen and (min-width: 768px) {
     font-size: 48px;
@@ -336,6 +345,7 @@ ul {
     height: 34px;
   }
 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     fill: $color2;
