@@ -8,11 +8,15 @@
   const closeMenuProduvts = document.querySelector('.js-close-produvts');
   const closeMenuContact = document.querySelector('.js-close-contact');
   const closeMenuBuynow = document.querySelector('.js-close-buynow');
+  const buyHide = document.querySelector('.js-buy-hide');
+  const openMenuHide = document.querySelector('.js-open-menu-hide');
 
   const toggleMenu = () => {
     const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    buyHide.classList.toggle('is-open-btn');
+    openMenuHide.classList.toggle('is-open-btn');
 
     const scrollLockMethod = !isMenuOpen ? 'disableBodyScroll' : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
@@ -32,6 +36,8 @@
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
+    buyHide.classList.remove('is-open-btn');
+    openMenuHide.classList.remove('is-open-btn');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
