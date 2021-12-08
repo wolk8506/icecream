@@ -71,3 +71,12 @@
 .main-button__icon--mobile-menu {
   margin-left: 15px;
 }
+
+.is-open-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+.js-buy-hide,
+.js-open-menu-hide {
+  @include animation(opacity);
+}
