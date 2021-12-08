@@ -1,30 +1,75 @@
 .about-section {
   background-color: $background7;
-   @media screen and (max-width: 439px) {
-    background-image: url(../images/about/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-position: center 766px;
-    background-size: contain;
+  z-index: -2;
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 40px;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/milk-mobile@2x.png);
+  @media screen and (min-width: 768px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    @media screen and (max-width: 540px) {
+      background-image: url(../images/about/milk-mobile.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/milk-mobile@2x.png);
+      }
+    }
+    @media screen and (min-width: 540px) and (max-width: 767px) {
+      width: 100%;
+      height: 35%;
+      bottom: 0;
+      background-image: url(../images/about/milk-mobile.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../images/about/milk-mobile@2x.png);
+      }
     }
   }
 
-  @media screen and (min-width: 440px)  and (max-width: 767px){
-    background-image: url(../images/about/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-position: center 766px;
-    background-size: 440px;
+  //  @media screen and (max-width: 440px) {
+  //     background-image: url(../images/about/milk-mobile.png);
+  //     background-repeat: no-repeat;
+  //     background-position: center 725px;
+  //     background-size: contain;
 
-    @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/about/milk-mobile@2x.png);
-    }
-  }
+  //     @media screen and (min-device-pixel-ratio: 2),
+  //       (min-resolution: 192dpi),
+  //       (min-resolution: 2dppx) {
+  //       background-image: url(../images/about/milk-mobile@2x.png);
+  //     }
+  //   }
+
+  // @media screen and (min-width: 440px)  and (max-width: 767px){
+  //   background-image: url(../images/about/milk-mobile.png);
+  //   background-repeat: no-repeat;
+  //   background-position: center 766px;
+  //   background-size: 440px;
+
+  //   @media screen and (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/about/milk-mobile@2x.png);
+  //   }
+  // }
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/about/milk-desktop.png);
@@ -43,16 +88,16 @@
 }
 
 .about-container {
-  padding-top: 125px;
-  padding-bottom: 40px;
+  // padding-top: 125px;
+  // padding-bottom: 40px;
 
-  @media screen and (min-width: 768px) {
-    padding-bottom: 60px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-bottom: 60px;
+  // }
 
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 40px;
-  }
+  // @media screen and (min-width: 1280px) {
+  //   padding-bottom: 40px;
+  // }
 }
 
 .about-label {
