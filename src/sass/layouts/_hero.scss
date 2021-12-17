@@ -113,41 +113,6 @@
     width: 50%;
   }
 }
-.hero-middle {
-  position: absolute;
-  bottom: 0;
-  left: 145px;
-
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    bottom: 0;
-    left: 378px;
-  }
-  @media screen and (min-width: 1280px) {
-    position: absolute;
-    bottom: 0;
-    left: 540px;
-  }
-}
-
-.rotation {
-  animation: rotate-ice 15s infinite cubic-bezier(0.17, 0.67, 0.96, -0.4) 2000ms;
-}
-
-@keyframes rotate-ice {
-  0% {
-    transform: perspective(400px) rotateY(0deg);
-  }
-
-  51% {
-    transform: perspective(400px) rotateY(180deg);
-  }
-
-  100% {
-    transform: perspective(400px) rotateY(360deg);
-  }
-}
-
 .hero-right {
   display: none;
   @media screen and (min-width: 768px) {
@@ -258,5 +223,481 @@
   @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.3;
+  }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+.hero-icecream-pic {
+  position: absolute;
+  z-index: 0;
+  left: 117px;
+  bottom: 0;
+  width: 171px;
+  opacity: 0;
+  @media screen and (min-width: 420px) {
+    left: auto;
+    right: 106px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 378px;
+    width: 143px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 236px;
+    left: 545px;
+  }
+  animation-name: icecream-pic;
+  animation-duration: 500ms;
+  animation-delay: 2100ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes icecream-pic {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+//////////////////////////////////////////////////////////////////
+
+.hero-icecream-element {
+  position: absolute;
+  animation-iteration-count: 1;
+  left: 117px;
+  width: 171px;
+  @media screen and (min-width: 420px) {
+    left: auto;
+    right: 106px;
+  }
+  @media screen and (min-width: 768px) {
+    left: 378px;
+    width: 143px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 545px;
+    width: 236px;
+  }
+}
+
+.hero-icecream-p7 {
+  bottom: -266px;
+  animation-name: icecream-p7;
+  animation-duration: 2500ms;
+}
+@keyframes icecream-p7 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-126px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-126px);
+  }
+}
+.hero-icecream-p6 {
+  bottom: 335px;
+  animation-name: icecream-p6;
+  animation-duration: 2300ms;
+  animation-delay: 200ms;
+}
+@keyframes icecream-p6 {
+  0% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(412px);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(412px);
+    opacity: 0;
+  }
+}
+.hero-icecream-p5 {
+  bottom: 330px;
+  animation-name: icecream-p5;
+  animation-duration: 2100ms;
+  animation-delay: 400ms;
+}
+@keyframes icecream-p5 {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(375px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(375px);
+    opacity: 0;
+  }
+}
+.hero-icecream-p4 {
+  bottom: 325px;
+  animation-name: icecream-p4;
+  animation-duration: 1800ms;
+  animation-delay: 700ms;
+}
+@keyframes icecream-p4 {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(331px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(331px);
+    opacity: 0;
+  }
+}
+.hero-icecream-p3 {
+  bottom: 330px;
+  animation-name: icecream-p3;
+  animation-duration: 1600ms;
+  animation-delay: 900ms;
+}
+@keyframes icecream-p3 {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(293px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(293px);
+    opacity: 0;
+  }
+}
+.hero-icecream-p2 {
+  bottom: 330px;
+  animation-name: icecream-p2;
+  animation-duration: 1400ms;
+  animation-delay: 1100ms;
+}
+@keyframes icecream-p2 {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(237px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(237px);
+    opacity: 0;
+  }
+}
+.hero-icecream-p1 {
+  bottom: 340px;
+  animation-name: icecream-p1;
+  animation-duration: 1200ms;
+  animation-delay: 1300ms;
+}
+@keyframes icecream-p1 {
+  0% {
+    transform: translateY(0);
+  }
+  90% {
+    transform: translateY(187px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(187px);
+    opacity: 0;
+  }
+}
+////////////////////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 768px) {
+  .hero-icecream-p7 {
+    bottom: -225px;
+    animation-name: icecream-p7;
+    animation-duration: 2500ms;
+  }
+  @keyframes icecream-p7 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-105px);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-105px);
+    }
+  }
+  .hero-icecream-p6 {
+    bottom: 260px;
+    animation-name: icecream-p6;
+    animation-duration: 2300ms;
+    animation-delay: 200ms;
+  }
+  @keyframes icecream-p6 {
+    0% {
+      transform: translateY(0);
+    }
+    70% {
+      transform: translateY(327px);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(327px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p5 {
+    bottom: 260px;
+    animation-name: icecream-p5;
+    animation-duration: 2100ms;
+    animation-delay: 400ms;
+  }
+  @keyframes icecream-p5 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(301px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(301px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p4 {
+    bottom: 260px;
+    animation-name: icecream-p4;
+    animation-duration: 1800ms;
+    animation-delay: 700ms;
+  }
+  @keyframes icecream-p4 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(268px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(268px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p3 {
+    bottom: 260px;
+    animation-name: icecream-p3;
+    animation-duration: 1600ms;
+    animation-delay: 900ms;
+  }
+  @keyframes icecream-p3 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(233px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(233px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p2 {
+    bottom: 260px;
+    animation-name: icecream-p2;
+    animation-duration: 1400ms;
+    animation-delay: 1100ms;
+  }
+  @keyframes icecream-p2 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(186px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(186px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p1 {
+    bottom: 264px;
+    animation-name: icecream-p1;
+    animation-duration: 1200ms;
+    animation-delay: 1300ms;
+  }
+  @keyframes icecream-p1 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(139px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(139px);
+      opacity: 0;
+    }
+  }
+}
+//////////////////////////////////////////////////////////////////
+
+@media screen and (min-width: 1280px) {
+  .hero-icecream-p7 {
+    bottom: -370px;
+    animation-name: icecream-p7;
+    animation-duration: 2500ms;
+  }
+  @keyframes icecream-p7 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-173px);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-173px);
+    }
+  }
+  .hero-icecream-p6 {
+    bottom: 440px;
+    animation-name: icecream-p6;
+    animation-duration: 2300ms;
+    animation-delay: 200ms;
+  }
+  @keyframes icecream-p6 {
+    0% {
+      transform: translateY(0);
+    }
+    70% {
+      transform: translateY(549px);
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(549px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p5 {
+    bottom: 440px;
+    animation-name: icecream-p5;
+    animation-duration: 2100ms;
+    animation-delay: 400ms;
+  }
+  @keyframes icecream-p5 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(506px);
+      opacity: 1;
+    }
+
+    100% {
+      transform: translateY(506px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p4 {
+    bottom: 440px;
+    animation-name: icecream-p4;
+    animation-duration: 1800ms;
+    animation-delay: 700ms;
+  }
+  @keyframes icecream-p4 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(453px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(453px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p3 {
+    bottom: 440px;
+    animation-name: icecream-p3;
+    animation-duration: 1600ms;
+    animation-delay: 900ms;
+  }
+  @keyframes icecream-p3 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(394px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(394px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p2 {
+    bottom: 440px;
+    animation-name: icecream-p2;
+    animation-duration: 1400ms;
+    animation-delay: 1100ms;
+  }
+  @keyframes icecream-p2 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(316px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(316px);
+      opacity: 0;
+    }
+  }
+  .hero-icecream-p1 {
+    bottom: 450px;
+    animation-name: icecream-p1;
+    animation-duration: 1200ms;
+    animation-delay: 1300ms;
+  }
+  @keyframes icecream-p1 {
+    0% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(243px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(243px);
+      opacity: 0;
+    }
   }
 }
