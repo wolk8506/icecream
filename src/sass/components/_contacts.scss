@@ -12,31 +12,6 @@
     background: linear-gradient(180deg, #fff 12%, #fff5f6 0);
   }
 }
-/* .contacts-container {
-  margin: 0 auto;
-  align-items: center;
-  @media screen and (min-width: 320px) {
-    width: 320px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 1080px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}*/
 
 .contacts-list {
   margin-left: auto;
@@ -76,8 +51,7 @@
     max-width: 232px;
   }
   @media screen and (min-width: 768px) {
-
-   // width: 232px;
+    // width: 232px;
 
     padding-top: 50px;
     padding-left: 31px;
@@ -418,4 +392,85 @@
 
 .back_to_top-show {
   display: flex;
+}
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+/* МОДАЛКА Our location */
+
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  transition: 0.3s all;
+}
+
+.modal__location {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  height: 80vh;
+  max-width: 500px;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  border-radius: 7px;
+  background-color: $background1;
+  transition: 300ms linear;
+
+  @media (min-width: 480px) {
+    width: 450px;
+  }
+  @media (min-width: 768px) and(max-width:1280px) {
+    width: 450px;
+  }
+  @media (min-width: 1280px) {
+    width: 528px;
+    height: 681px;
+  }
+}
+
+.modal__location__map {
+  width: 100%;
+  height: 100%;
+}
+
+.close-modal {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+  z-index: 35;
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.modal__location.active,
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: 300ms linear;
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
