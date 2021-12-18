@@ -3,6 +3,15 @@
 $font-main: 'DM Sans', sans-serif;
 $font-acent: 'Titan One', cursive;
 
+@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $fc;
+}
+
 //***** C O L O R *****
 
 $color1: #ffffff;
@@ -15,6 +24,11 @@ $color6-btn: #d9d9d9;
 $color7-btn-activ: #d31342;
 $color8-gradient: #fafafa;
 $color9-gradient: #e1e1e1;
+$color10: rgba(0, 0, 0, 0.1);
+$color11: rgba(33, 33, 33, 0.2);
+$color12: #808080;
+$color13: rgba(117, 117, 117, 0.5);
+$color14: rgba(212, 20, 67, 0.85);
 
 $color-ice1: #f63a99;
 $color-ice2: #30dcf6;
@@ -32,22 +46,19 @@ $background7: #fff5f6;
 $background8: #fea5bb;
 $background9: #ffffff;
 $background10: rgba(255, 255, 255, 0.5);
+$background11: #e17992;
+$background12: rgba(0, 0, 0, 0.2);
+$background13: rgba(0, 0, 0, 0.5);
+$background14: rgba(255, 165, 186, 0.05);
+$background15: rgba(255, 165, 186, 0.3);
 
-:root {
-  --white-text-color: #ffffff;
-  --black-text-color: #000000;
-  --grey-text-color: #907e82;
-  --secondary-title-color: #ffa5ba;
-  --bg-color: #ffffff;
-  --secondary-bg-color: #fff5f6;
-  --third-bg-color: #ffb8ca;
-  --accent-color: #d41443;
-  --secondary-accent-color: #c7133e;
-}
+$color-shadow: rgba(34, 60, 80, 0.2);
+$color-shadow2: rgba(212, 20, 67, 0.1);
+$color-shadow3: rgba(0, 0, 0, 0.25);
+$color-shadow4: rgba(0, 0, 0, 0.12);
+$color-shadow5: rgba(0, 0, 0, 0.14);
 
-$duration: 250ms;
-$function: cubic-bezier(0.4, 0, 0.2, 1);
-// *****  ANIMATION
+// *****  A N I M A T I O N  *****
 
 @mixin animation-slider($property) {
   transition-property: $property;
@@ -61,14 +72,7 @@ $function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
-  font-family: $ff;
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  letter-spacing: $ls;
-  color: $fc;
-}
+// *****  B U T T O N  *****
 
 %button {
   display: flex;

@@ -1,0 +1,826 @@
+.about__backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: $background12;
+  z-index: 1000;
+  top: 0;
+  @include animation(opacity visibility);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-modal {
+  position: absolute;
+  height: calc(100vh - 50px);
+  width: 100vw;
+  background-color: $background7;
+  box-shadow: 0px 1px 3px $color-shadow4, 0px 1px 1px $color-shadow5, 0px 2px 1px $background12;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 620px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 720px;
+  }
+}
+
+.about__modal-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.modal__btn--close {
+  position: absolute;
+  border: 1px solid $color10;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  fill: currentColor;
+  @include animation(color);
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}
+
+.about__label-modal {
+  font-family: $font-acent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color2;
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+}
+
+.about__img-modal {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 22px;
+  @media screen and (max-width: 768px) {
+    max-width: calc(100% - 6vw);
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 500px;
+  }
+}
+
+.about__text-modal {
+  max-width: calc(100% - 6vw);
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 1.62;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    max-width: 450px;
+    font-size: 10px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 500px;
+    font-size: 12px;
+    line-height: 1.76;
+  }
+}
+// !!!!       Modal header buy now
+
+.header-backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background: $background12;
+  @include animation(opacity visibility transform);
+  opacity: 1;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transform: scale(1.1);
+  }
+}
+.header-modal {
+  min-width: 300px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: $background9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  box-shadow: 0px 1px 3px $color-shadow4, 0px 1px 1px $color-shadow5, 0px 2px 1px $background12;
+  border-radius: 4px;
+
+  @media screen and (max-width: 480px) {
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    height: 581px;
+  }
+}
+.header-modal__close-button {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: $background7;
+  border: 1px solid $color10;
+  @include animation(color);
+  color: $color5;
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}
+.header-modal__icon-close {
+  height: 11px;
+  width: 11px;
+  fill: currentColor;
+}
+.header-modal__container {
+  margin: 0 auto;
+  min-width: 280px;
+
+  @media screen and (max-width: 479px) {
+    width: 280px;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 370px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 448px;
+  }
+}
+.header-modal__title {
+  margin-bottom: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  font-family: $font-acent;
+  color: $color2;
+}
+.header-modal__form {
+  min-width: 260px;
+  height: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    width: 370px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 448px;
+  }
+}
+.header-modal__submit-button {
+  background-color: $background1;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  align-items: center;
+  text-align: center;
+  border: none;
+  color: $color1;
+  box-shadow: 0px 4px 4px $color-shadow5;
+  border-radius: 4px;
+  @include animation(color background-color);
+  &:hover,
+  &:focus {
+    background-color: $background7;
+    color: $color2;
+  }
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field__label {
+  position: relative;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $color12;
+}
+
+.form-field__span {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.form-field__input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid $color11;
+  border-radius: 4px;
+  padding-left: 42px;
+
+  margin-top: 4px;
+  margin-bottom: 10px;
+
+  cursor: pointer;
+  outline: transparent;
+  @include animation(fill border-color);
+
+  &:focus,
+  &:active,
+  &:hover {
+    border-color: $color2;
+    fill: $color2;
+  }
+
+  &-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    @include animation(fill);
+  }
+
+  &:focus + &-icon,
+  &:active + &-icon,
+  &:hover + &-icon {
+    fill: $color2;
+  }
+}
+
+.form-field__textarea-comment {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
+  margin-top: 4px;
+  resize: none;
+  cursor: pointer;
+  outline: transparent;
+  border: 1px solid $color11;
+  border-radius: 4px;
+  color: $color12;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  height: 120px;
+  @include animation(border-color);
+  &::placeholder {
+    color: $color12;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    border-color: $color2;
+  }
+}
+
+// !!!!       Modal milk
+
+.products-backdrop {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background12;
+  @include animation(opacity transform);
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1.1);
+  }
+}
+.products-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  padding: 40px;
+  border-radius: 24px;
+
+  @media screen and (min-width: 480px) {
+    width: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+  }
+}
+
+.products-modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+  border: 1px solid $color10;
+  border-radius: 50%;
+  background-color: $color1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.products-modal__icon-close {
+  @include animation(fill);
+  .products-modal__close-btn:hover &,
+  .products-modal__close-btn:focus & {
+    fill: $color2;
+  }
+}
+
+.products-modal__title {
+  margin-bottom: 15px;
+
+  font-family: $font-acent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.products-modal--fourth {
+  background-color: $color1;
+}
+
+.products-modal__title--fourth {
+  color: $color2;
+}
+
+.products-modal__description--hero {
+  color: $color5;
+}
+
+.products-modal__description {
+  font-family: $font-main;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+
+// !!!!       Modal products
+
+.backdrop-product,
+.backdrop-beige-product,
+.backdrop-green-product {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: $background12;
+  top: 0;
+}
+
+.backdrop-product.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop-beige-product.is-hidden-beige {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop-green-product.is-hidden-green {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.product-modal,
+.product-beige-modal,
+.product-green-modal {
+  position: absolute;
+  width: 320px;
+  min-height: 450px;
+  border-radius: 10px;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product-modal {
+  background-color: $background1;
+}
+.product-beige-modal {
+  background-color: $background5;
+}
+
+.product-green-modal {
+  background-color: $background6;
+}
+
+.product-close-button,
+.product-beige-close-button,
+.product-green-close-button {
+  border: 1px solid $color10;
+  background-color: $background7;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include animation(color);
+
+  color: $color5;
+
+  &:hover,
+  &:focus {
+    color: $color2;
+  }
+}
+
+.product-modal-icon-close,
+.product-beige-modal-icon-close,
+.product-green-modal-icon-close {
+  width: 15px;
+  height: 15px;
+  fill: currentColor;
+}
+
+.text-modal-product {
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  letter-spacing: 0.04em;
+  color: $color1;
+}
+
+//!!!!       МОДАЛКА Our location */
+
+.backdrop {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $background13;
+  z-index: 11;
+  @include animation(all);
+}
+.modal__location {
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 80vh;
+  max-width: 500px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 30;
+  box-shadow: 0 3px 10px -0.5px $background12;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: $background1;
+  transition: 300ms linear;
+
+  @media (min-width: 480px) {
+    width: 450px;
+  }
+  @media (min-width: 768px) and(max-width:1280px) {
+    width: 450px;
+  }
+  @media (min-width: 1280px) {
+    width: 528px;
+    height: 681px;
+  }
+}
+
+.modal__location__map {
+  width: 100%;
+  height: 100%;
+}
+
+.close-modal {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: $color4;
+  cursor: pointer;
+  z-index: 35;
+  &:hover,
+  &:focus {
+    fill: $color2;
+  }
+}
+
+.modal__location.active,
+.backdrop.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: 300ms linear;
+}
+.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+// ******************
+
+// !!!!     Модалка с франшизой
+
+.backdrop-franchise {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background12;
+  @include animation(opacity visibility);
+}
+
+.backdrop-franchise.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  @include animation(opacity);
+  box-shadow: 0px 1px 3px $color-shadow4, 0px 1px 1px $color-shadow5, 0px 2px 1px $background12;
+  border-radius: 4px;
+}
+
+.backdrop-franchise.is-hidden .modal {
+  opacity: 0;
+  @include animation(opacity);
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  fill: $color2;
+}
+
+// ************
+
+.modal-franchise {
+  width: 450px;
+  padding: 40px 40px;
+
+  background-color: $color1;
+  background-image: url(../images/icecream-modal.png);
+  background-repeat: no-repeat;
+  background-position: 310px top;
+  background-size: 110px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    padding: 40px 30px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    background-position: 350px top;
+    background-size: 135px;
+  }
+}
+
+.modal-franchise__text {
+  display: block;
+  margin-bottom: 10px;
+  width: 70%;
+  @include font(inherit, 14px, 400, 1.5, 0.02em, $color4);
+  text-align: start;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.modal-franchise__title {
+  font-weight: 700;
+}
+
+.modal-franchise__text--link:hover {
+  color: $color2;
+}
+
+.modal-franchise__field {
+  display: flex;
+  flex-direction: column;
+
+  @include font(inherit, 12px, 400, 1.7, 0.04em, $color5);
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 14px;
+    font-weight: 500;
+    line-height: 1.94;
+  }
+}
+
+.modal-franchise__wrapper {
+  position: relative;
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.modal-franchise__input {
+  display: block;
+
+  width: 100%;
+  height: 35px;
+  padding: 0 0 0 42px;
+
+  border: 1px solid $color11;
+  border-radius: 4px;
+
+  @include font(inherit, 12px, 400, 1.94, 0.04em, $color5);
+  @include animation(border-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .modal-franchise__wrapper:hover & {
+    border-color: $color2;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .modal-franchise__input:focus {
+    outline: none;
+    border-color: $color5;
+  }
+}
+
+.modal-franchise__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $color5;
+  @include animation(fill);
+
+  .modal-franchise__wrapper:hover &,
+  .modal-franchise__input:focus + & {
+    fill: $color2;
+    cursor: pointer;
+  }
+}
+
+.modal-franchise__country {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $color11;
+  border-radius: 4px;
+  padding: 0 0 0 8px;
+  color: $color5;
+}
+
+.modal-franchise__country:hover {
+  border-color: $color2;
+  cursor: pointer;
+}
+
+.modal-franchise__option {
+  @include font(inherit, 12px, 400, 1.2, 0.03em, $color5);
+}
+
+.modal-franchise__button {
+  margin-right: auto;
+  margin-left: auto;
+  @extend %button;
+
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 161px;
+  height: 30px;
+
+  @media screen and (min-width: 1280px) {
+    width: 192px;
+    height: 40px;
+  }
+
+  background-color: $color2;
+  color: $color1;
+}
+// ***************************************************************************************

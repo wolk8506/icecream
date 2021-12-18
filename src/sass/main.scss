@@ -3,33 +3,26 @@
  * Все паршалы подключаются сюда.
  */
 
-// Стили для файла с примером HTML-фрагмента
-
-//**********************
-
 @import './utils/variables';
 @import './utils/reset';
 @import './utils/visually-hidden';
+@import './utils/scroll';
+@import './utils/snowfall';
+@import './utils/btn-up';
+
+@import './layouts/container-one';
+@import './layouts/container';
+@import './layouts/mobile-menu';
+@import './layouts/modal-window';
+
 @import './components/link-button';
 @import './components/main-button';
-@import './components/page-general';
-@import './components/container-one';
-@import './components/container';
-
-@import './layouts/header';
-@import './layouts/header_modal-window';
-@import './layouts/hero';
-@import './layouts/mobile-menu';
-
+@import './components/header';
+@import './components/hero';
 @import './components/products';
 @import './components/about';
-@import './components/about-modal';
 @import './components/advantages';
 @import './components/gallery';
 @import './components/page-customer-reviews';
 @import './components/contacts';
 @import './components/footer';
-@import './components/products-modal';
-
-@import './utils/scroll';
-@import './utils/snowfall';

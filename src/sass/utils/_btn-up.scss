@@ -1,0 +1,34 @@
+.back_to_top {
+  width: 70px;
+  height: 70px;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  padding-left: 11px;
+  font-size: 25px;
+  line-height: 1.44;
+  font-weight: 400;
+  font-family: Titan One, cursive;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  color: $color-shadow2;
+  border-radius: 50%;
+  border-color: transparent;
+  background-color: $background14;
+  display: flex;
+  opacity: 0;
+  z-index: 1000;
+  cursor: pointer;
+  @include animation(background-color box-shadow opacity font-size color);
+}
+
+.back_to_top:hover {
+  background-color: $background15;
+  box-shadow: 0px 5px 10px 2px $color-shadow;
+  font-size: 27px;
+  color: $color14;
+}
+.back_to_top-show {
+  opacity: 1;
+}

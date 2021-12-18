@@ -5,11 +5,11 @@
   width: 100vw;
   height: 100vh;
   padding-top: 60px;
-  background-color: #e17992;
+  background-color: $background11;
   z-index: 900;
   transform: translateX(110%);
   transition: transform 500ms cubic-bezier(0.17, 0.67, 0.96, -0.4);
-  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(-8px 0px 20px $color-shadow3);
 
   @media screen and (min-width: 480px) {
     width: 254px;
@@ -30,20 +30,18 @@
   }
 
   &__close-icon {
-    fill: var(--white-text-color);
+    fill: $color1;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:hover {
-      fill: var(--accent-color);
+      fill: $color2;
     }
   }
   &__list {
-    border-top: 1px solid #e18298;
+    border-top: 1px solid $background11;
   }
   &__item {
-    // text-align: left;
-    // padding: 12px 0 12px 24px;
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid $background11;
   }
   &__link {
     display: block;
@@ -52,12 +50,12 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    color: var(--white-text-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: $color1;
+    @include animation(color);
 
     &:hover,
     &:hover {
-      color: var(--accent-color);
+      color: $color2;
     }
   }
 }
