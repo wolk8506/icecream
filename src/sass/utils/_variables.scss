@@ -1,16 +1,14 @@
 //***** F O N T *****
+
 $font-main: 'DM Sans', sans-serif;
 $font-acent: 'Titan One', cursive;
+
 //***** C O L O R *****
-// header, products, btn-dark, contacts
+
 $color1: #ffffff;
-// header, btn-light, title, footer
 $color2: #d41443;
-// products, about, contacts, footer
 $color3: #ffa5ba;
-// about-text, advantages-text, reviews-text, cotacts, footer
 $color4: #000000;
-// footer, contacts, about
 $color5: #907e82;
 $color6: #e1e1e1;
 $color6-btn: #d9d9d9;
@@ -25,25 +23,31 @@ $color-ice4: #0cff7f;
 $color-ice5: #e09c5f;
 $color-ice6: #8d613b;
 
-// BACKGROUND //
-// header, products
 $background1: #ffb8ca;
-// btn-dark-hover
 $background3: #c7133e;
-// btn-light-hover
 $background4: #ecebeb;
-// products, contacts
 $background5: #f0d1a5;
 $background6: #c2e297;
-// about, footer
 $background7: #fff5f6;
-// social-icon
 $background8: #fea5bb;
-//products-btn
 $background9: #ffffff;
 $background10: rgba(255, 255, 255, 0.5);
 
-// ANIMATION
+:root {
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --grey-text-color: #907e82;
+  --secondary-title-color: #ffa5ba;
+  --bg-color: #ffffff;
+  --secondary-bg-color: #fff5f6;
+  --third-bg-color: #ffb8ca;
+  --accent-color: #d41443;
+  --secondary-accent-color: #c7133e;
+}
+
+$duration: 250ms;
+$function: cubic-bezier(0.4, 0, 0.2, 1);
+// *****  ANIMATION
 
 @mixin animation-slider($property) {
   transition-property: $property;
@@ -55,4 +59,29 @@ $background10: rgba(255, 255, 255, 0.5);
   transition-property: $property;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin font($ff, $fs, $fw, $lh, $ls, $fc) {
+  font-family: $ff;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $fc;
+}
+
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 24px;
+  min-width: 62.4px;
+  font-family: $font-main;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: none;
+  border-radius: 22px;
 }

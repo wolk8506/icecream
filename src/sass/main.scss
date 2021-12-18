@@ -8,8 +8,8 @@
 //**********************
 
 @import './utils/variables';
-@import './utils/variables-one';
 @import './utils/reset';
+@import './utils/visually-hidden';
 @import './components/link-button';
 @import './components/main-button';
 @import './components/page-general';
@@ -23,6 +23,7 @@
 
 @import './components/products';
 @import './components/about';
+@import './components/about-modal';
 @import './components/advantages';
 @import './components/gallery';
 @import './components/page-customer-reviews';

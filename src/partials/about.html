@@ -1,61 +1,109 @@
 <section id="made" class="about-section">
   <div class="container about-container">
-<p class="about-label">tradition and love</p>
-  <h2 class="about-title">how it’s made?</h2>
-  <div class="about-wrapper">
-    <div class="about-image">
-    <picture >
-      <source
-        media="(min-width: 1280px)"
-        srcset="./images/about/cow-desktop.webp 1x, ./images/about/cow@2x-desktop.webp 2x"
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 1280px)"
-        srcset="./images/about/cow-desktop.png 1x, ./images/about/cow@2x-desktop.png 2x"
-        type="image/png"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="./images/about/cow-tablet.webp 1x, ./images/about/cow@2x-tablet.webp 2x"
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 768px)"
-        srcset="./images/about/cow-tablet.png 1x, ./images/about/cow@2x-tablet.png 2x"
-        type="image/png"
-      />
-      <source
-        media="(min-width: 320px)"
-        srcset="./images/about/cow-mobile.webp 1x, ./images/about/cow@2x-mobile.webp 2x"
-        type="image/webp"
-      />
-      <source
-        media="(min-width: 320px)"
-        srcset="./images/about/cow-mobile.png 1x, ./images/about/cow@2x-mobile.png 2x"
-        type="image/png"
-      />
-      <img src="./images/about/cow-mobile.png" alt="cow and milk" loading="lazy" class="img-cow" />
-    </picture>
-  </div>
-  <div class="about-wrap-text">
-    <p class="about-text-dark">
-      Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
-      eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-    </p>
-    <p class="about-text-light">
-      Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
-      imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-      Cras massa nibh, tincidunt. Aliquam erat volutpat. <br />
-      <br />
-      Aenean accumsan.
-    </p>
-    <button type="button" class="about-btn-light">Read more
-      <svg class="about-btn-bracket">
-        <use href="./images/icons.svg#icon-bracket"></use>
-      </svg>
-    </button>
-  </div>
-  </div>
+    <p class="about-label">tradition and love</p>
+    <h2 class="about-title">how it’s made?</h2>
+    <div class="about-wrapper">
+      <div class="about-image">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/about/cow-desktop.webp 1x, ./images/about/cow@2x-desktop.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1280px)"
+            srcset="./images/about/cow-desktop.png 1x, ./images/about/cow@2x-desktop.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/about/cow-tablet.webp 1x, ./images/about/cow@2x-tablet.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/about/cow-tablet.png 1x, ./images/about/cow@2x-tablet.png 2x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="./images/about/cow-mobile.webp 1x, ./images/about/cow@2x-mobile.webp 2x"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="./images/about/cow-mobile.png 1x, ./images/about/cow@2x-mobile.png 2x"
+            type="image/png"
+          />
+          <img
+            src="./images/about/cow-mobile.png"
+            alt="cow and milk"
+            loading="lazy"
+            class="img-cow"
+          />
+        </picture>
+      </div>
+      <div class="about-wrap-text">
+        <p class="about-text-dark">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about-text-light">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. <br />
+          <br />
+          Aenean accumsan.
+        </p>
+        <button type="button" class="about-btn-light" about-modal-open>
+          Read more
+          <svg class="about-btn-bracket">
+            <use href="./images/icons.svg#icon-bracket"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
+<div class="about__backdrop is-hidden" about-modal>
+  <div class="about-modal">
+    <button type="button" class="modal__btn--close" about-modal-close>
+      <svg class="modal__icon--close" width="18" height="18">
+        <use href="images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="about__modal-container">
+      <h4 class="about__label-modal">Only hand made</h4>
+      <picture class="about__picture">
+        <source srcset="images/about-modal/tools.webp" type="image/webp" />
+        <source srcset="images/about-modal/tools.jpg" />
+        <img class="about__img-modal" src="images/about-modal/tools.jpg" alt="Tools"
+      /></picture>
+      <p class="about__text-modal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem minima consequuntur
+        iusto commodi minus nesciunt odit, autem qui inventore omnis vel quis placeat, explicabo ab.
+        Doloremque aperiam atque sapiente.
+      </p>
+      <p class="about__text-modal">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel fugiat asperiores voluptatem
+        iusto, similique nostrum repellendus! Quaerat maiores non minus.
+      </p>
+      <p class="about__text-modal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum ratione esse
+        assumenda ipsa distinctio optio error rerum laudantium delectus non totam adipisci vitae
+        dignissimos, pariatur sit dolores ipsum ab magnam ducimus. Sint ipsam odio qui obcaecati
+        temporibus necessitatibus sequi suscipit voluptatum totam et quis, culpa assumenda ea
+        ratione iste.
+      </p>
+      <p class="about__text-modal">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente accusamus odit dicta eius.
+        Ea fugiat cupiditate, dicta voluptatum illo voluptate delectus ratione quas, ipsum
+        repellendus earum laboriosam neque, fuga necessitatibus!
+      </p>
+      <p class="about__text-modal">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur ad illo vero
+        asperiores veniam error eum eaque porro dicta quibusdam.
+      </p>
+    </div>
+  </div>
+</div>

@@ -4,11 +4,13 @@
   function trackScroll() {
     var scrolled = window.pageYOffset;
     var coords = document.documentElement.clientHeight;
+    const coordsModified = coords/2
 
-    if (scrolled > coords) {
+    if (scrolled > coordsModified) {
       goTopBtn.classList.add('back_to_top-show');
+      
     }
-    if (scrolled < coords) {
+    if (scrolled < coordsModified) {
       goTopBtn.classList.remove('back_to_top-show');
     }
   }

@@ -367,31 +367,52 @@
 }
 
 .back_to_top {
-  position: fixed;
-  bottom: 70px;
-  right: 30px;
-  z-index: 9999;
-  width: 65px;
-  height: 65px;
-  line-height: 30px;
-  background-color: rgba(255, 165, 186, 0.2);
-  color: #444;
-  cursor: pointer;
-  border-radius: 50%;
-  justify-content: center;
+  width: 70px;
+  height: 70px;
   align-items: center;
-  transition-property: background-color;
-  transition-duration: var(--all-timing-animation);
-  transition-timing-function: var(--all-transition-timing-function);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
   display: none;
+  // padding-top: 15px;
+  padding-left: 11px;
+  font-size: 25px;
+  line-height: 1.44;
+  font-weight: 400;
+  font-family: Titan One, cursive;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  // background-color: #fff;
+  color: rgba(212, 20, 67, 0.5);
+  border-radius: 50%;
+  border-color: transparent;
+  // position: fixed;
+  // bottom: 70px;
+  // right: 30px;
+  // z-index: 9999;
+  // width: 65px;
+  // height: 65px;
+  // line-height: 30px;
+  background-color: rgba(255, 165, 186, 0.05);
+  // color: #444;
+  // cursor: pointer;
+  // border-radius: 50%;
+  // justify-content: center;
+  // align-items: center;
+  display: flex;
+  // display: none;
+  opacity: 0;
+  @include animation(background-color box-shadow opacity font-size color);
 }
 
 .back_to_top:hover {
-  background-color: rgba(255, 165, 186, 0.35);
+  background-color: rgba(255, 165, 186, 0.3);
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+  font-size: 27px;
+  color: rgba(212, 20, 67, 0.85);
 }
 
 .back_to_top-show {
-  display: flex;
+  opacity: 1;
 }
 /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 /* МОДАЛКА Our location */
@@ -458,7 +479,7 @@
   z-index: 35;
   &:hover,
   &:focus {
-    color: var(--brand-color);
+    fill: $color2;
   }
 }
 
@@ -474,3 +495,210 @@
   visibility: visible;
   pointer-events: auto;
 }
+// Модалка с франшизой
+
+// ******************
+
+.backdrop-franchise {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity $duration $function, visibility $duration $function;
+}
+
+.backdrop-franchise.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity $duration $function;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.backdrop-franchise.is-hidden .modal {
+  opacity: 0;
+  transition: opacity $duration $function;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.modal__close-btn:hover,
+.modal__close-btn:focus {
+  fill: $color2;
+}
+
+// ************
+
+.modal-franchise {
+  width: 450px;
+  padding: 40px 40px;
+
+  background-color: $color1;
+  background-image: url(../images/icecream-modal.png);
+  background-repeat: no-repeat;
+  background-position: 310px top;
+  background-size: 110px;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    padding: 40px 30px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 528px;
+    background-position: 350px top;
+    background-size: 135px;
+  }
+}
+
+.modal-franchise__text {
+  display: block;
+  margin-bottom: 10px;
+  width: 70%;
+  @include font(inherit, 14px, 400, 1.5, 0.02em, $color4);
+  text-align: start;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.76;
+  }
+}
+
+.modal-franchise__title {
+  font-weight: 700;
+}
+
+.modal-franchise__text--link:hover {
+  color: $color2;
+}
+
+.modal-franchise__field {
+  display: flex;
+  flex-direction: column;
+
+  @include font(inherit, 12px, 400, 1.7, 0.04em, $color5);
+
+  @media screen and (min-width: 1280px) {
+    font-weight: 14px;
+    font-weight: 500;
+    line-height: 1.94;
+  }
+}
+
+.modal-franchise__wrapper {
+  position: relative;
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+.modal-franchise__input {
+  display: block;
+
+  width: 100%;
+  height: 35px;
+  padding: 0 0 0 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  @include font(inherit, 12px, 400, 1.94, 0.04em, $color5);
+
+  transition: border-color $duration $function;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .modal-franchise__wrapper:hover & {
+    border-color: $color2;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .modal-franchise__input:focus {
+    outline: none;
+    border-color: $color5;
+  }
+}
+
+.modal-franchise__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: $color5;
+
+  transition: fill $duration $function;
+
+  .modal-franchise__wrapper:hover &,
+  .modal-franchise__input:focus + & {
+    fill: $color2;
+    cursor: pointer;
+  }
+}
+
+.modal-franchise__country {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0 0 0 8px;
+  color: $color5;
+}
+
+.modal-franchise__country:hover {
+  border-color: $color2;
+  cursor: pointer;
+}
+
+.modal-franchise__option {
+  @include font(inherit, 12px, 400, 1.2, 0.03em, $color5);
+}
+
+.modal-franchise__button {
+  margin-right: auto;
+  margin-left: auto;
+  @extend %button;
+
+  padding-left: 17px;
+  padding-right: 17px;
+  width: 161px;
+  height: 30px;
+
+  @media screen and (min-width: 1280px) {
+    width: 192px;
+    height: 40px;
+  }
+
+  background-color: $color2;
+  color: $color1;
+}
+// *********
